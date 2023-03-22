@@ -1,6 +1,7 @@
 package com.zouwei.eeis.entity;
 
 import java.math.BigDecimal;
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 public class TemperatureHumidityData {
@@ -8,7 +9,7 @@ public class TemperatureHumidityData {
   private String sensorId;
   private BigDecimal temperature;
   private BigDecimal humidity;
-  private LocalDateTime timestamp;
+  private Timestamp timestamp;
 
   public int getId() {
     return id;
@@ -34,10 +35,10 @@ public class TemperatureHumidityData {
   public void setHumidity(BigDecimal humidity) {
     this.humidity = humidity;
   }
-  public LocalDateTime getTimestamp() {
+  public Timestamp getTimestamp() {
     return timestamp;
   }
-  public void setTimestamp(LocalDateTime timestamp) {
+  public void setTimestamp(Timestamp timestamp) {
     this.timestamp = timestamp;
   }
 }

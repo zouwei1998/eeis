@@ -17,7 +17,6 @@ public class DatabaseConnection {
     PoolOptions poolOptions = new PoolOptions().setMaxSize(10);
     mySQLPool = MySQLPool.pool(vertx, connectOptions, poolOptions);
   }
-
   public MySQLPool getMySQLPool() {
     return mySQLPool;
   }
